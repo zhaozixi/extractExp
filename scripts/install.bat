@@ -93,13 +93,61 @@ echo.
 
 echo Installing extractExp dependencies...
 echo.
-"%PYTHON_CMD%" -m pip install -r "%~dp0requirements.txt"
+
+rem ---------- 先安装轻量依赖（chromadb, scikit-learn）----------
+echo [1/3] Installing light dependencies...
+"%PYTHON_CMD%" -m pip install chromadb scikit-learn ^
+    -i https://pypi.tuna.tsinghua.edu.cn/simple ^
+    --trusted-host pypi.tuna.tsinghua.edu.cn ^
+    --default-timeout=1000 --retries=5 --prefer-binary
 if %errorlevel% neq 0 (
-    echo.
-    echo [ERROR] Dependency installation failed.
-    echo Please check your network connection and try again.
-    pause
-    exit /b 1
+    echo [WARN] 清华镜像失败，尝试阿里云镜像...
+    "%PYTHON_CMD%" -m pip install chromadb scikit-learn ^
+        -i https://mirrors.aliyun.com/pypi/simple ^
+        --trusted-host mirrors.aliyun.com ^
+        --default-timeout=1000 --retries=5 --prefer-binary
+    if %errorlevel% neq 0 (
+        echo [ERROR] 轻量依赖安装失败。
+        pause
+        exit /b 1
+    )
+)
+
+rem ---------- 单独安装 torch CPU 版（从 PyTorch 官方源，比 PyPI 快且小）----------
+echo [2/3] Installing PyTorch (CPU only, ~200MB)...
+echo       (This may take a few minutes, please be patient)
+"%PYTHON_CMD%" -m pip install torch --index-url https://download.pytorch.org/whl/cpu ^
+    --default-timeout=1000 --retries=5
+if %errorlevel% neq 0 (
+    echo [WARN] PyTorch 官方源失败，尝试从镜像源安装...
+    "%PYTHON_CMD%" -m pip install torch ^
+        -i https://pypi.tuna.tsinghua.edu.cn/simple ^
+        --trusted-host pypi.tuna.tsinghua.edu.cn ^
+        --default-timeout=1000 --retries=5 --prefer-binary
+    if %errorlevel% neq 0 (
+        echo [ERROR] PyTorch 安装失败。
+        pause
+        exit /b 1
+    )
+)
+
+rem ---------- 安装 sentence-transformers（现在 torch 已有，会快很多）----------
+echo [3/3] Installing sentence-transformers...
+"%PYTHON_CMD%" -m pip install sentence-transformers ^
+    -i https://pypi.tuna.tsinghua.edu.cn/simple ^
+    --trusted-host pypi.tuna.tsinghua.edu.cn ^
+    --default-timeout=1000 --retries=5 --prefer-binary
+if %errorlevel% neq 0 (
+    echo [WARN] 清华镜像失败，尝试阿里云镜像...
+    "%PYTHON_CMD%" -m pip install sentence-transformers ^
+        -i https://mirrors.aliyun.com/pypi/simple ^
+        --trusted-host mirrors.aliyun.com ^
+        --default-timeout=1000 --retries=5 --prefer-binary
+    if %errorlevel% neq 0 (
+        echo [ERROR] sentence-transformers 安装失败。
+        pause
+        exit /b 1
+    )
 )
 
 echo.
