@@ -150,11 +150,23 @@ if %errorlevel% neq 0 (
     )
 )
 
+rem ---------- 4. 执行初始化脚本（建目录 + 下载嵌入模型 ~188MB）----------
+echo.
+echo [4/4] Running initialization (downloading embedding model ~188MB)...
+echo       (This may take a few minutes on first run, model will be cached)
+"%PYTHON_CMD%" "%~dp0init.py"
+if %errorlevel% neq 0 (
+    echo.
+    echo [WARN] 初始化脚本执行失败，但依赖已安装成功。
+    echo        你可以稍后手动运行: python scripts/init.py
+)
+
 echo.
 echo ============================================
 echo  [DONE] Installation successful!
 echo  Next step: Switch Workbuddy to Craft mode
 echo  and import extractExp/SKILL.md
+echo  Then say: 设置萃取经验助手路径为 D:/extractExp
 echo ============================================
 echo.
 pause

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360"
+     role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <title id="title">全流程：保存 → 检索 → 进化 → 删除</title>
+  <desc id="desc">extractExp 的完整生命周期：保存经验入库，检索时结合语义与知识图谱，整理知识用 K-Means 聚类进化，删除时三层存储同步清理。全程本地离线。</desc>
+
+  <rect width="1200" height="360" rx="24" fill="#11152B"/>
+
+  <text x="60" y="50" font-size="22" font-weight="700" fill="#EDEAF4">全流程：保存 → 检索 → 进化 → 删除</text>
+
+  <!-- connectors -->
+  <g stroke="#E9B04A" stroke-width="2" fill="#E9B04A">
+    <path d="M300 175 L330 175" stroke-width="2"/>
+    <path d="M322 168 L332 175 L322 182 Z"/>
+    <path d="M580 175 L610 175"/>
+    <path d="M602 168 L612 175 L602 182 Z"/>
+    <path d="M860 175 L890 175"/>
+    <path d="M882 168 L892 175 L882 182 Z"/>
+  </g>
+
+  <!-- Node 1: 保存 -->
+  <g transform="translate(60 100)">
+    <rect width="240" height="150" rx="18" fill="#20263F" stroke="#6B76A8" stroke-width="1.5"/>
+    <circle cx="120" cy="42" r="22" fill="#11152B" stroke="#6B76A8" stroke-width="2"/>
+    <text x="120" y="49" text-anchor="middle" font-size="20" font-weight="800" fill="#C7CCE0">1</text>
+    <text x="120" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#EDEAF4">保存经验</text>
+    <text x="120" y="116" text-anchor="middle" font-size="16" fill="#F2C879" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">“保存这个经验”</text>
+    <text x="120" y="138" text-anchor="middle" font-size="15" fill="#9AA3C7">向量入库 · 自动关联</text>
+  </g>
+
+  <!-- Node 2: 检索 -->
+  <g transform="translate(340 100)">
+    <rect width="240" height="150" rx="18" fill="#20263F" stroke="#6B76A8" stroke-width="1.5"/>
+    <circle cx="120" cy="42" r="22" fill="#11152B" stroke="#7C9CFF" stroke-width="2"/>
+    <text x="120" y="49" text-anchor="middle" font-size="20" font-weight="800" fill="#9DB4FF">2</text>
+    <text x="120" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#EDEAF4">检索经验</text>
+    <text x="120" y="116" text-anchor="middle" font-size="16" fill="#F2C879" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">“帮我想想”</text>
+    <text x="120" y="138" text-anchor="middle" font-size="15" fill="#9AA3C7">语义 + 图谱扩展</text>
+  </g>
+
+  <!-- Node 3: 进化 (highlight) -->
+  <g transform="translate(620 100)">
+    <rect width="240" height="150" rx="18" fill="#2A2410" stroke="#E9B04A" stroke-width="2"/>
+    <circle cx="120" cy="42" r="22" fill="#11152B" stroke="#E9B04A" stroke-width="2"/>
+    <text x="120" y="49" text-anchor="middle" font-size="20" font-weight="800" fill="#F2C879">3</text>
+    <text x="120" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#EDEAF4">整理知识</text>
+    <text x="120" y="116" text-anchor="middle" font-size="16" fill="#F2C879" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">“整理知识”</text>
+    <text x="120" y="138" text-anchor="middle" font-size="15" fill="#E7C98C">K-Means 聚类进化</text>
+  </g>
+
+  <!-- Node 4: 删除 -->
+  <g transform="translate(900 100)">
+    <rect width="240" height="150" rx="18" fill="#20263F" stroke="#6B76A8" stroke-width="1.5"/>
+    <circle cx="120" cy="42" r="22" fill="#11152B" stroke="#6B76A8" stroke-width="2"/>
+    <text x="120" y="49" text-anchor="middle" font-size="20" font-weight="800" fill="#C7CCE0">4</text>
+    <text x="120" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#EDEAF4">删除经验</text>
+    <text x="120" y="116" text-anchor="middle" font-size="16" fill="#F2C879" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">“忘掉这个”</text>
+    <text x="120" y="138" text-anchor="middle" font-size="15" fill="#9AA3C7">三层同步清理</text>
+  </g>
+
+  <!-- bottom strip -->
+  <g transform="translate(60 290)">
+    <rect width="1080" height="40" rx="20" fill="#1B2142"/>
+    <text x="540" y="26" text-anchor="middle" font-size="16" fill="#EDEAF4">全程本地 · 完全离线 · 无需 API Key · 知识图谱自动关联相似经验并提示冲突</text>
+  </g>
+</svg>

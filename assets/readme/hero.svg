@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380"
+     role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <title id="title">extractExp 萃取经验助手</title>
+  <desc id="desc">三层知识管理系统：把一次具体的解决问题过程，萃取成可复用的通用智慧。本地优先，无需 API Key。</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11152B"/>
+      <stop offset="1" stop-color="#171D3C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
+
+  <!-- faint decoration -->
+  <circle cx="1135" cy="36" r="130" fill="#E9B04A" opacity="0.05"/>
+  <circle cx="70" cy="360" r="90" fill="#7C9CFF" opacity="0.05"/>
+
+  <!-- LEFT: identity -->
+  <g transform="translate(64 56)">
+    <text x="0" y="2" font-size="16" fill="#9AA3C7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">三层知识管理系统 · 本地优先 · 无需 API Key</text>
+
+    <text x="0" y="66" font-size="66" font-weight="800" fill="#EDEAF4" letter-spacing="-1">extractExp</text>
+    <circle cx="430" cy="40" r="8" fill="#E9B04A"/>
+
+    <text x="0" y="110" font-size="30" font-weight="600" fill="#7C9CFF">萃取经验助手</text>
+    <text x="0" y="150" font-size="22" fill="#EDEAF4">让 AI 记住你的每一次成长</text>
+
+    <line x1="0" y1="178" x2="560" y2="178" stroke="#2A3160" stroke-width="1"/>
+
+    <!-- meta pills -->
+    <g font-size="16" fill="#9AA3C7">
+      <rect x="0"   y="196" width="140" height="32" rx="16" fill="#1B2142" stroke="#2E376B" stroke-width="1"/>
+      <text x="70"  y="217" text-anchor="middle">语义向量检索</text>
+      <rect x="156" y="196" width="140" height="32" rx="16" fill="#1B2142" stroke="#2E376B" stroke-width="1"/>
+      <text x="226" y="217" text-anchor="middle">知识图谱扩展</text>
+      <rect x="312" y="196" width="128" height="32" rx="16" fill="#1B2142" stroke="#2E376B" stroke-width="1"/>
+      <text x="376" y="217" text-anchor="middle">K-Means 进化</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: three-layer distillation column -->
+  <g transform="translate(740 46)">
+    <line x1="220" y1="20" x2="220" y2="278" stroke="#E9B04A" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle cx="220" cy="14" r="9" fill="#E9B04A"/>
+    <circle cx="216" cy="10" r="3" fill="#FFF3D6" opacity="0.8"/>
+
+    <!-- L3 -->
+    <rect x="80" y="30" width="280" height="66" rx="16" fill="#2A2410" stroke="#E9B04A" stroke-width="1.5"/>
+    <text x="220" y="58" text-anchor="middle" font-size="24" font-weight="700" fill="#F2C879">L3 · 原则</text>
+    <text x="220" y="80" text-anchor="middle" font-size="16" fill="#E7C98C">跨领域通用思考原则</text>
+
+    <!-- arrow L2 -> L3 -->
+    <path d="M220 106 L220 94" stroke="#E9B04A" stroke-width="2"/>
+    <path d="M214 100 L220 92 L226 100" fill="#E9B04A"/>
+
+    <!-- L2 -->
+    <rect x="80" y="110" width="280" height="66" rx="16" fill="#16224A" stroke="#7C9CFF" stroke-width="1.5"/>
+    <text x="220" y="138" text-anchor="middle" font-size="24" font-weight="700" fill="#9DB4FF">L2 · 模式</text>
+    <text x="220" y="160" text-anchor="middle" font-size="16" fill="#B9C8FF">归纳后的通用策略</text>
+
+    <!-- arrow L1 -> L2 -->
+    <path d="M220 186 L220 174" stroke="#7C9CFF" stroke-width="2"/>
+    <path d="M214 180 L220 172 L226 180" fill="#7C9CFF"/>
+
+    <!-- L1 -->
+    <rect x="80" y="190" width="280" height="66" rx="16" fill="#20263F" stroke="#6B76A8" stroke-width="1.5"/>
+    <text x="220" y="218" text-anchor="middle" font-size="24" font-weight="700" fill="#C7CCE0">L1 · 实例</text>
+    <text x="220" y="240" text-anchor="middle" font-size="16" fill="#AEB6D6">具体踩坑与操作记录</text>
+
+    <text x="220" y="300" text-anchor="middle" font-size="15" fill="#9AA3C7">越往上越通用，换个场景照样能用</text>
+  </g>
+</svg>

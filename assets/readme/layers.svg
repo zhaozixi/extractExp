@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470"
+     role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <title id="title">三层知识模型：越萃取越通用</title>
+  <desc id="desc">L1 存具体实例，L2 存通用策略，L3 存跨领域思考原则。经验从下往上被持续萃取，越往上越通用。</desc>
+
+  <rect width="1200" height="470" rx="24" fill="#11152B"/>
+
+  <text x="60" y="50" font-size="22" font-weight="700" fill="#EDEAF4">三层知识模型 · 越萃取越通用</text>
+  <text x="60" y="74" font-size="16" fill="#9AA3C7">把一次具体经历，拆成三个层次分别保存，随用随升华</text>
+
+  <!-- arrows between columns -->
+  <g fill="#E9B04A">
+    <path d="M392 168 L424 180 L392 192 Z" opacity="0.85"/>
+    <path d="M672 168 L704 180 L672 192 Z" opacity="0.85"/>
+  </g>
+
+  <!-- L1 column -->
+  <g transform="translate(60 96)">
+    <rect width="340" height="300" rx="18" fill="#20263F" stroke="#6B76A8" stroke-width="1.5"/>
+    <circle cx="170" cy="56" r="30" fill="#11152B" stroke="#6B76A8" stroke-width="2"/>
+    <text x="170" y="64" text-anchor="middle" font-size="26" font-weight="800" fill="#C7CCE0">L1</text>
+    <text x="170" y="118" text-anchor="middle" font-size="22" font-weight="700" fill="#EDEAF4">实例</text>
+    <line x1="40" y1="140" x2="300" y2="140" stroke="#2E376B" stroke-width="1"/>
+    <text x="40" y="172" font-size="18" fill="#9AA3C7">存什么</text>
+    <text x="40" y="196" font-size="20" fill="#EDEAF4">具体怎么做的</text>
+    <text x="40" y="220" font-size="20" fill="#EDEAF4">（步骤 · 坑点 · 成功条件）</text>
+    <text x="40" y="258" font-size="18" fill="#9AA3C7">打个比方</text>
+    <text x="40" y="284" font-size="20" fill="#7C9CFF">记一篇日记</text>
+  </g>
+
+  <!-- L2 column -->
+  <g transform="translate(430 96)">
+    <rect width="340" height="300" rx="18" fill="#16224A" stroke="#7C9CFF" stroke-width="1.5"/>
+    <circle cx="170" cy="56" r="30" fill="#11152B" stroke="#7C9CFF" stroke-width="2"/>
+    <text x="170" y="64" text-anchor="middle" font-size="26" font-weight="800" fill="#9DB4FF">L2</text>
+    <text x="170" y="118" text-anchor="middle" font-size="22" font-weight="700" fill="#EDEAF4">模式</text>
+    <line x1="40" y1="140" x2="300" y2="140" stroke="#2E376B" stroke-width="1"/>
+    <text x="40" y="172" font-size="18" fill="#9AA3C7">存什么</text>
+    <text x="40" y="196" font-size="20" fill="#EDEAF4">这类问题的通用策略</text>
+    <text x="40" y="220" font-size="20" fill="#EDEAF4">（适用条件 · 关联）</text>
+    <text x="40" y="258" font-size="18" fill="#9AA3C7">打个比方</text>
+    <text x="40" y="284" font-size="20" fill="#7C9CFF">总结一套套路</text>
+  </g>
+
+  <!-- L3 column -->
+  <g transform="translate(800 96)">
+    <rect width="340" height="300" rx="18" fill="#2A2410" stroke="#E9B04A" stroke-width="1.5"/>
+    <circle cx="170" cy="56" r="30" fill="#11152B" stroke="#E9B04A" stroke-width="2"/>
+    <text x="170" y="64" text-anchor="middle" font-size="26" font-weight="800" fill="#F2C879">L3</text>
+    <text x="170" y="118" text-anchor="middle" font-size="22" font-weight="700" fill="#EDEAF4">原则</text>
+    <line x1="40" y1="140" x2="300" y2="140" stroke="#3A3416" stroke-width="1"/>
+    <text x="40" y="172" font-size="18" fill="#E7C98C">存什么</text>
+    <text x="40" y="196" font-size="20" fill="#EDEAF4">跨领域底层思考规律</text>
+    <text x="40" y="220" font-size="20" fill="#EDEAF4">（最底层的决策逻辑）</text>
+    <text x="40" y="258" font-size="18" fill="#E7C98C">打个比方</text>
+    <text x="40" y="284" font-size="20" fill="#F2C879">一次顿悟</text>
+  </g>
+
+  <!-- bottom banner -->
+  <g transform="translate(60 418)">
+    <rect width="1080" height="40" rx="20" fill="#1B2142"/>
+    <text x="540" y="26" text-anchor="middle" font-size="18" fill="#EDEAF4">存 L1 只能解决一个问题 · 存 L3 能修电器、修流程、也修关系——底层逻辑通了</text>
+  </g>
+</svg>
